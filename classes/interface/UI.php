@@ -10,7 +10,8 @@ class UI
             'Flat File Generator Options', 
             'Flat File Generator', 
             'manage_options', 
-            'flat-file-generator'
+            'flat-file-generator', 
+            'flatfilegeneratorUi'
         );
 
     }

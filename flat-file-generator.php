@@ -31,6 +31,21 @@ class FlatFileGenerator
 
 }
 
+add_menu_page( 
+    'Flat File Generator Options', 
+    'Flat File Generator', 
+    'manage_options', 
+    'flat-file-generator', 
+    'flatfilegeneratorUi'
+);
+
+function flatfilegeneratorUi()
+{
+
+    //
+
+}
+
 function runPlugin()
 {
     $path = FFG_PATH;

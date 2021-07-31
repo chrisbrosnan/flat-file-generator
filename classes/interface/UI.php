@@ -23,7 +23,9 @@ class UI
     public function optionsForm()
     {
         echo '<p>Select a file format and content type</p>'; 
-        echo '<form>'; 
+        echo '<form action="admin.php" method="post">'; 
+            echo '<input type="hidden" name="page" value="flat-file-generator">';
+            echo '<input type="hidden" name="download" value="yes">';
             echo '<select name="file-format">
                     <option>JSON</option>
                     <option>CSV</option>

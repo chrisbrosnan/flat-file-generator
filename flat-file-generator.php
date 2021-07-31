@@ -35,5 +35,6 @@ add_action('admin_menu', 'addMenu');
 
 function flatfilegeneratorUI()
 {
-    //
+    $ui = new UI; 
+    $ui->optionsLayout(); 
 }

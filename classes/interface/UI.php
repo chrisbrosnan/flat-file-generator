@@ -3,38 +3,14 @@
 class UI
 {
 
-    function addMenu()
+    public function optionsLayout()
     {
 
-        add_menu_page( 
-            'Flat File Generator Options', 
-            'Flat File Generator', 
-            'manage_options', 
-            'flat-file-generator', 
-            'flatfilegeneratorUi'
-        );
+        echo 
+            '
+            <h1>Flat File Generator</h1>
+            ';
 
     }
-
-}
-
-function addMenu()
-{
-
-    add_menu_page( 
-        'Flat File Generator Options', 
-        'Flat File Generator', 
-        'manage_options', 
-        'flat-file-generator', 
-        'flatfilegeneratorUi'
-    );
-
-}
-add_action('admin_menu', 'addMenu');
-
-function flatfilegeneratorUi()
-{
-
-    //
 
 }

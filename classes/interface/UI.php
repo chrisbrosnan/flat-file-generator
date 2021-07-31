@@ -7,6 +7,7 @@ class UI
     {
         $this->headerTitle(); 
         $this->optionsSpacer(); 
+        $this->optionsForm(); 
     }
 
     public function headerTitle()
@@ -17,6 +18,18 @@ class UI
     public function optionsSpacer()
     {
         echo '<br/>';
+    }
+
+    public function optionsForm()
+    {
+        echo '<p>Select a file format and content type</p>'; 
+        echo '<form>'; 
+            echo '<select name="file-format">
+                    <option>JSON</option>
+                    <option>CSV</option>
+                </select>'; 
+                echo '<input type="submit" value="Export">';
+        echo '</form>'; 
     }
 
 }

@@ -11,46 +11,38 @@ Text Domain: flat-file-generator
 
 // Set Constants
 
-define('FFG_PATH', plugin_dir_path( __FILE__ ));
+// define('FFG_PATH', plugin_dir_path( __FILE__ ));
 
-class FlatFileGenerator
-{
+// class FlatFileGenerator
+// {
 
-    function runPlugin()
-    {
+//     function runPlugin()
+//     {
 
-        // Include Core File
+//         // Include Core File
 
-        include( FFG_PATH . 'classes/Core.php');
+//         include( FFG_PATH . 'classes/Core.php');
 
-        $core = new Core;
+//         $core = new Core;
 
-        $core->activate($path); 
+//         $core->activate($path); 
 
-    }
+//     }
 
-}
+// }
 
 add_menu_page( 
     'Flat File Generator Options', 
     'Flat File Generator', 
     'manage_options', 
-    'flat-file-generator', 
-    'flatfilegeneratorUi'
+    'flat-file-generator'
 );
 
-function flatfilegeneratorUi()
-{
+// function runPlugin()
+// {
+//     $path = FFG_PATH;
+//     $ffg = new FlatFileGenerator;
+//     $ffg->runPlugin($path); 
+// }
 
-    //
-
-}
-
-function runPlugin()
-{
-    $path = FFG_PATH;
-    $ffg = new FlatFileGenerator;
-    $ffg->runPlugin($path); 
-}
-
-runPlugin();
+// runPlugin();

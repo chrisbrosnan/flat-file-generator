@@ -27,7 +27,7 @@ class UI
             echo '<select name="file-format">
                     <option>JSON</option>
                     <option>CSV</option>
-                </select>'; 
+                </select><br/>'; 
                 echo '<input type="submit" value="Export">';
         echo '</form>'; 
     }

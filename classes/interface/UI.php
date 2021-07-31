@@ -5,12 +5,18 @@ class UI
 
     public function optionsLayout()
     {
+        $this->headerTitle(); 
+        $this->optionsSpacer(); 
+    }
 
-        echo 
-            '
-            <h1>Flat File Generator</h1>
-            ';
+    public function headerTitle()
+    {
+        echo '<h1>Flat File Generator</h1>';
+    }
 
+    public function optionsSpacer()
+    {
+        echo '<br/>';
     }
 
 }

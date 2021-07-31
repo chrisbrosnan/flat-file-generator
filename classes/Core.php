@@ -7,11 +7,11 @@ class Core
     {
 
         // Exports 
-        include('exports/Formats.php');
-        include('exports/Options.php');
+        include('Formats.php');
+        include('Options.php');
 
         // Interface
-        include('exports/UI.php');
+        include('UI.php');
 
     }
 

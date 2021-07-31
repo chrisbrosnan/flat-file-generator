@@ -15,9 +15,9 @@ define('FFG_PATH', plugin_dir_path( __FILE__ ));
 
 // Include Classes
 include( FFG_PATH . 'classes/Core.php');
-include( FFG_PATH . 'classes/exports/Formats.php');
-include( FFG_PATH . 'classes/exports/Options.php');
-include( FFG_PATH . 'classes/interface/UI.php');
+include( FFG_PATH . 'classes/Formats.php');
+include( FFG_PATH . 'classes/Options.php');
+include( FFG_PATH . 'classes/UI.php');
 
 function addMenu()
 {

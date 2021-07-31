@@ -9,6 +9,16 @@ Author URI: https://chrisbrosnan.me
 Text Domain: flat-file-generator
 */
 
+// Set Constants
+
+define('FFG_PATH', plugin_dir_path( __FILE__ ));
+
+// Include Classes
+include( FFG_PATH . 'classes/Core.php');
+include( FFG_PATH . 'classes/exports/Formats.php');
+include( FFG_PATH . 'classes/exports/Options.php');
+include( FFG_PATH . 'classes/interface/UI.php');
+
 function addMenu()
 {
 
@@ -23,33 +33,7 @@ function addMenu()
 }
 add_action('admin_menu', 'addMenu');
 
-// // Set Constants
-
-// define('FFG_PATH', plugin_dir_path( __FILE__ ));
-
-// class FlatFileGenerator
-// {
-
-//     function runPlugin()
-//     {
-
-//         // Include Core File
-
-//         include( FFG_PATH . 'classes/Core.php');
-
-//         $core = new Core;
-
-//         $core->activate($path); 
-
-//     }
-
-// }
-
-// function runPlugin()
-// {
-//     $path = FFG_PATH;
-//     $ffg = new FlatFileGenerator;
-//     $ffg->runPlugin($path); 
-// }
-
-// runPlugin();
+function flatfilegeneratorUI()
+{
+    //
+}

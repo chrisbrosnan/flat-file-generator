@@ -24,6 +24,8 @@ $dataTypes = new Data;
 $fileFormats = new Formats; 
 $exportFormats = $fileFormats->exportFormats();
 
+var_dump($exportFormats); 
+
 function addMenu()
 {
 
@@ -40,7 +42,7 @@ add_action('admin_menu', 'addMenu');
 
 function flatfilegeneratorUI($exportFormats)
 {
-    var_dump($exportFormats); 
+    // var_dump($exportFormats); 
     // $ui = new UI; 
     // $ui->optionsLayout($exportFormats); 
 }

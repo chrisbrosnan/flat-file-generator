@@ -16,8 +16,13 @@ define('FFG_PATH', plugin_dir_path( __FILE__ ));
 // Include Classes
 include( FFG_PATH . 'classes/Core.php');
 include( FFG_PATH . 'classes/Formats.php');
+include( FFG_PATH . 'classes/Data.php');
 include( FFG_PATH . 'classes/Options.php');
 include( FFG_PATH . 'classes/UI.php');
+
+$dataTypes = new Data; 
+$fileFormats = new Formats; 
+$exportFormats = $fileFormats->exportFormats();
 
 function addMenu()
 {
@@ -33,8 +38,8 @@ function addMenu()
 }
 add_action('admin_menu', 'addMenu');
 
-function flatfilegeneratorUI()
+function flatfilegeneratorUI($exportFormats)
 {
     $ui = new UI; 
-    $ui->optionsLayout(); 
+    $ui->optionsLayout($exportFormats); 
 }

@@ -9,11 +9,11 @@ class UI
     // public $data = new Data; 
     // public $formats = new Formats; 
 
-    public function optionsLayout()
+    public function optionsLayout($exportFormats)
     {
         $this->headerTitle(); 
         $this->optionsSpacer(); 
-        $this->optionsForm(); 
+        $this->optionsForm($exportFormats); 
     }
 
     public function headerTitle()
@@ -26,7 +26,7 @@ class UI
         echo '<br/>';
     }
 
-    public function optionsForm()
+    public function optionsForm($exportFormats)
     {
         $o = '<p>Select a file format and content type or database table</p>'; 
         $o .= '<form action="admin.php" method="get">'; 
@@ -34,7 +34,7 @@ class UI
             $o .= '<input type="hidden" name="download" value="yes">';
             $o .= '<select name="file-format" style="width: 200px;">'; 
             $o .= '<option value="none">Select a file format</option>';
-                    foreach($formats->exportFormats as $key => $value)
+                    foreach($exportFormats as $key => $value)
                     {
                         $o .= '<option value="'.$value.'">'.$key.'</option>'; 
                     }

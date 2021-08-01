@@ -41,5 +41,5 @@ function flatfilegeneratorUI()
     $exportFormats = $fileFormats->exportFormats();
     $dataTypesArray = $dataTypes->getDataTypes(); 
     $ui = new UI; 
-    $ui->optionsLayout($exportFormats); 
+    $ui->optionsLayout($exportFormats, $dataTypesArray); 
 }

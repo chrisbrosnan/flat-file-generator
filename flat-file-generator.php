@@ -20,11 +20,6 @@ include( FFG_PATH . 'classes/Data.php');
 include( FFG_PATH . 'classes/Options.php');
 include( FFG_PATH . 'classes/UI.php');
 
-$dataTypes = new Data; 
-$fileFormats = new Formats; 
-$exportFormats = $fileFormats->exportFormats();
-$dataTypesArray = $dataTypes->getDataTypes(); 
-
 function addMenu()
 {
 
@@ -41,6 +36,10 @@ add_action('admin_menu', 'addMenu');
 
 function flatfilegeneratorUI()
 {
+    $dataTypes = new Data; 
+    $fileFormats = new Formats; 
+    $exportFormats = $fileFormats->exportFormats();
+    $dataTypesArray = $dataTypes->getDataTypes(); 
     $ui = new UI; 
-    $ui->optionsLayout(); 
+    $ui->optionsLayout($exportFormats); 
 }

@@ -28,11 +28,12 @@ class UI
 
     public function optionsForm()
     {
-        $o = '<p>Select a file format and content type</p>'; 
+        $o = '<p>Select a file format and content type or database table</p>'; 
         $o .= '<form action="admin.php" method="get">'; 
             $o .= '<input type="hidden" name="page" value="flat-file-generator">';
             $o .= '<input type="hidden" name="download" value="yes">';
             $o .= '<select name="file-format">'; 
+            $o .= '<option value="none">Select a file format</option>';
                     foreach($formats->exportFormats as $key => $value)
                     {
                         $o .= '<option value="'.$value.'">'.$key.'</option>'; 
@@ -40,6 +41,7 @@ class UI
             $o .= '</select>';
             $o .= '<br/>'; 
             $o .= '<select name="content-type">';
+            $o .= '<option value="none">Select a data type</option>';
                     foreach($data->dataTypes as $key => $value)
                     {
                         $o .= '<option value="'.$value.'">'.$key.'</option>'; 

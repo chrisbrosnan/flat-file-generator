@@ -9,11 +9,6 @@ Author URI: https://chrisbrosnan.me
 Text Domain: flat-file-generator
 */
 
-$dataTypes = new Data; 
-$fileFormats = new Formats; 
-$exportFormats = $fileFormats->exportFormats();
-$dataTypesArray = $dataTypes->getDataTypes(); 
-
 // Set Constants
 
 define('FFG_PATH', plugin_dir_path( __FILE__ ));
@@ -24,6 +19,11 @@ include( FFG_PATH . 'classes/Formats.php');
 include( FFG_PATH . 'classes/Data.php');
 include( FFG_PATH . 'classes/Options.php');
 include( FFG_PATH . 'classes/UI.php');
+
+$dataTypes = new Data; 
+$fileFormats = new Formats; 
+$exportFormats = $fileFormats->exportFormats();
+$dataTypesArray = $dataTypes->getDataTypes(); 
 
 function addMenu()
 {

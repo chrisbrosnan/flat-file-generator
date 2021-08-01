@@ -40,7 +40,7 @@ add_action('admin_menu', 'addMenu');
 
 function flatfilegeneratorUI($exportFormats)
 {
-    print_r($exportFormats); 
+    var_dump($exportFormats); 
     // $ui = new UI; 
     // $ui->optionsLayout($exportFormats); 
 }

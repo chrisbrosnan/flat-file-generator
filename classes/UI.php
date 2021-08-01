@@ -32,7 +32,7 @@ class UI
         $o .= '<form action="admin.php" method="get">'; 
             $o .= '<input type="hidden" name="page" value="flat-file-generator">';
             $o .= '<input type="hidden" name="download" value="yes">';
-            $o .= '<select name="file-format">'; 
+            $o .= '<select name="file-format" style="width: 200px;">'; 
             $o .= '<option value="none">Select a file format</option>';
                     foreach($formats->exportFormats as $key => $value)
                     {
@@ -40,7 +40,7 @@ class UI
                     }
             $o .= '</select>';
             $o .= '<br/>'; 
-            $o .= '<select name="content-type">';
+            $o .= '<select name="content-type" style="width: 200px;">';
             $o .= '<option value="none">Select a data type</option>';
                     foreach($data->dataTypes as $key => $value)
                     {

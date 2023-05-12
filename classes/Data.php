@@ -9,7 +9,8 @@ class Data
         return array(
             'Posts' => 'post', 
             'Pages' => 'page', 
-            'Tags' => 'tag'
+            'Tags' => 'tag', 
+            'Options' => 'options'
         ); 
 
     }

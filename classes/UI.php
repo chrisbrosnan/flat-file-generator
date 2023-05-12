@@ -1,15 +1,9 @@
 <?php 
 
-class UI
+class UIClass
 {
-    
-    // include('Formats.php');
-    // include('Data.php');
 
-    // public $data = new Data; 
-    // public $formats = new Formats; 
-
-    public function optionsLayout($exportFormats, $dataTypes)
+    public function optionsLayout($exportFormats = '', $dataTypes = '')
     {
         $this->headerTitle(); 
         $this->optionsSpacer(); 

@@ -1,17 +1,14 @@
 <?php 
 
+include('UI.php');
+
 class Core
 {
 
-    public function activate($path)
+    public function activate()
     {
 
-        // Exports 
-        include('Formats.php');
-        include('Options.php');
-
-        // Interface
-        include('UI.php');
+        return UIClass::optionsLayout(); 
 
     }
 

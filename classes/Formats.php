@@ -12,4 +12,22 @@ class Formats
         );
     }
 
+    public function formatAsJson($dataSet){
+
+        // Export as JSON
+
+    }
+
+    public function formatAsCsv($dataSet){
+
+        // Export as CSV
+
+    }
+
+    public function formatAsXml($dataSet){
+
+        // Export as XML
+
+    }
+
 }
